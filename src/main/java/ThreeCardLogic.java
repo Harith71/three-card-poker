@@ -37,8 +37,7 @@ public class ThreeCardLogic {
         int playerEval = evalHand(player);
         ArrayList<Integer> playerCVals = orderedCards(player);
         ArrayList<Integer> dealerCvals = orderedCards(dealer);
-        ////////////////////// asafasdgdsag
-        //if(dealerEval == 0 && dealerCvals.get(2) < 12) return  -1; // check this in the main logic template remove from here after
+        
         if(dealerEval == 0 || playerEval == 0) {
             if(playerEval > dealerEval) return 2;
             if(playerEval < dealerEval) return 1;
